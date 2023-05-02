@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . models import Plantillla
+from . models import Plantilla
 
-admin.site.register(Plantillla)
+admin.site.register(Plantilla)
 
