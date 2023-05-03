@@ -135,22 +135,22 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
 
-LOGIN_URL = "/login/auth0" 
+LOGIN_URL = "/login/auth0"
 LOGIN_REDIRECT_URL = "/" 
-LOGOUT_REDIRECT_URL = "isis2503-danielauribemos-grupo1-sprint3.us.auth0.com/v2/logout?returnTo=http%3A%2F%2F34.125.51.168:8080" 
+LOGOUT_REDIRECT_URL = "https://isis2503-danielauribemos-grupo1-sprint3.us.auth0.com/v2/logout?returnTo=http%3A%2F%2F34.125.51.168:8080" 
 
-SOCIAL_AUTH_TRAILING_SLASH = False # Remove end slash from routes 
-SOCIAL_AUTH_AUTH0_DOMAIN = 'isis2503-danielauribemos-grupo1-sprint3.us.auth0.com' 
-SOCIAL_AUTH_AUTH0_KEY = 'bolF37ZyQFqnIuBiDo1YM0V8D7wXwpKW' 
+SOCIAL_AUTH_TRAILING_SLASH = False # Remove end slash from routes
+SOCIAL_AUTH_AUTH0_DOMAIN = 'isis2503-danielauribemos-grupo1-sprint3.us.auth0.com'
+SOCIAL_AUTH_AUTH0_KEY = 'bolF37ZyQFqnIuBiDo1YM0V8D7wXwpKW'
 SOCIAL_AUTH_AUTH0_SECRET = '4o5v6xISqgynLEvELgr4fdangRO6j952WAbdTD-PPW6fv7ZXpufnD28QheASPH_4' 
-
-SOCIAL_AUTH_AUTH0_SCOPE = [ 
-	'openid', 
-	'profile',
-	'email',
-	'role', 
+SOCIAL_AUTH_AUTH0_SCOPE = [
+        'openid',
+        'profile',
+        'email',
+        'role',
 ] 
-AUTHENTICATION_BACKENDS = { 
-	'windmy.auth0backend.Auth0', 
-    'django.contrib.auth.backends.ModelBackend',
- }
+
+AUTHENTICATION_BACKENDS = {
+        'windmy.auth0backend.Auth0', 
+        'django.contrib.auth.backends.ModelBackend',
+}
